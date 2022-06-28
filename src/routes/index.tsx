@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Search from './Search'
+import Favorite from './Favorite'
 
 import styles from './routes.module.scss'
-import Search from './Search'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <div className={styles.app}>
         <Routes>
           <Route path='/' element={<Search />} />
+          <Route path='favorite' element={<Favorite />} />
         </Routes>
       </div>
     </BrowserRouter>
