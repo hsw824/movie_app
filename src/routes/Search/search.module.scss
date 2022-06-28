@@ -10,26 +10,33 @@
   overflow: scroll;
   background-color: #171723;
   border-radius: 45px;
-}
 
-form {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
-  padding: 20px;
-  margin: 20px 0;
-  background-color: #2b2b38;
-  border-radius: 14px;
+  form {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #2b2b38;
+    border-radius: 14px;
 
-  input {
-    width: 400px;
-    font-size: 16px;
-    font-weight: 600;
-    color: colors.$WHITE;
-    letter-spacing: 0.02rem;
+    input {
+      width: 400px;
+      font-size: 16px;
+      font-weight: 600;
+      color: colors.$WHITE;
+      letter-spacing: 0.02rem;
+    }
+
+    button {
+      color: colors.$WHITE;
+    }
   }
 
-  button {
+  h1 {
+    margin-top: 150px;
+    font-size: 24px;
     color: colors.$WHITE;
+    text-align: center;
   }
 }
