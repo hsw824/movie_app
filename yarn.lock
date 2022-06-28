@@ -10303,11 +10303,6 @@ junk@^3.1.0:
   resolved "https://registry.yarnpkg.com/junk/-/junk-3.1.0.tgz#31499098d902b7e98c5d9b9c80f43457a88abfa1"
   integrity sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ==
 
-kakao.maps.d.ts@^0.1.31:
-  version "0.1.31"
-  resolved "https://registry.yarnpkg.com/kakao.maps.d.ts/-/kakao.maps.d.ts-0.1.31.tgz#da1d352c9bd63b5cc5d08c19d62996fefb3eaca5"
-  integrity sha512-+fLv3yecc+XR3IKgJSqnYwkAz9ai7M5QMV6wz2J0FDyww9asF9ZA7GE28cx6SURQgauPGcwk0/DyNYXqmuLDgg==
-
 kdbush@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/kdbush/-/kdbush-3.0.0.tgz#f8484794d47004cc2d85ed3a79353dbe0abc2bf0"
@@ -12967,13 +12962,6 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.1.0.tgz#61aaed3096d30eacf2a2127118b5b41387d32a67"
   integrity sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==
 
-react-kakao-maps-sdk@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-kakao-maps-sdk/-/react-kakao-maps-sdk-1.1.0.tgz#970f822df99f43c01a13151b930f68296932ebdf"
-  integrity sha512-96m4ipap2KToy1OImy2SXI0OWLAfZuXydbaazDD66d4SKybghVSoEqHW7afYdOe5ptOP023KHvZl+9eETHx3og==
-  dependencies:
-    kakao.maps.d.ts "^0.1.31"
-
 react-merge-refs@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"
@@ -15383,6 +15371,11 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-local-storage-state@^17.0.1:
+  version "17.2.0"
+  resolved "https://registry.yarnpkg.com/use-local-storage-state/-/use-local-storage-state-17.2.0.tgz#4928f792b0030b9fca3e9b7cb15e39526dfbb41f"
+  integrity sha512-CcnSJ3oaCbb4aXPRpctXNoAOfJ1V4+OWLHrvA2s2hOYCE7HG0QEyKd324XAs7FsyXv/uzYcu7sPxn+KwvJIwlw==
 
 use-sync-external-store@^1.0.0:
   version "1.1.0"
