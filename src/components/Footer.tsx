@@ -1,6 +1,4 @@
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
-import cx from 'classnames'
 
 import styles from './footer.module.scss'
 
