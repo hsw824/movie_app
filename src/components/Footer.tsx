@@ -1,12 +1,23 @@
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+import cx from 'classnames'
+
 import styles from './footer.module.scss'
 
 const Footer = () => {
   return (
-    <ul className={styles.menuContainer}>
-      <NavLink to='/'>Search</NavLink>
-      <NavLink to='/favorite'>Favorite</NavLink>
-    </ul>
+    <div className={styles.menuContainer}>
+      <li>
+        <NavLink to='/' className={({ isActive }) => (isActive ? styles.selected : undefined)}>
+          Search
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to='/favorite' className={({ isActive }) => (isActive ? styles.selected : undefined)}>
+          Favorite
+        </NavLink>
+      </li>
+    </div>
   )
 }
 
