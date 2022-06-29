@@ -13,8 +13,17 @@
     content: 'ㅣ';
   }
 
-  a {
-    color: colors.$WHITE;
-    cursor: pointer;
+  li {
+    a {
+      padding: 10px;
+      color: colors.$WHITE;
+      cursor: pointer;
+    }
+
+    .selected {
+      color: colors.$BLACK;
+      background-color: colors.$WHITE;
+      border-radius: 10px;
+    }
   }
 }
