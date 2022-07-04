@@ -3,14 +3,17 @@ import Search from './Search'
 import Favorite from './Favorite'
 
 import styles from './routes.module.scss'
+import Layout from 'Layouts'
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className={styles.app}>
         <Routes>
-          <Route path='/' element={<Search />} />
-          <Route path='favorite' element={<Favorite />} />
+          <Route element={<Layout />}>
+            <Route path='/' element={<Search />} />
+            <Route path='favorite' element={<Favorite />} />
+          </Route>
         </Routes>
       </div>
     </BrowserRouter>

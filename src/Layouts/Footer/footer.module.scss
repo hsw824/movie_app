@@ -1,0 +1,32 @@
+@use 'src/styles/constants/colors';
+
+.menuContainer {
+  position: fixed;
+  bottom: 50px;
+  width: 600px;
+  color: colors.$WHITE;
+
+  .menuWrapper {
+    display: flex;
+    justify-content: space-around;
+
+    &::after {
+      position: absolute;
+      content: 'ㅣ';
+    }
+
+    li {
+      a {
+        padding: 10px;
+        color: colors.$WHITE;
+        cursor: pointer;
+      }
+
+      .selected {
+        color: colors.$BLACK;
+        background-color: colors.$WHITE;
+        border-radius: 10px;
+      }
+    }
+  }
+}
