@@ -1,8 +1,8 @@
-import { useState, ChangeEvent, MouseEvent } from 'react'
 import MovieList from './MovieList'
+import { useState, ChangeEvent, MouseEvent } from 'react'
+import { fetchMovie } from 'utils/fetchMovie'
 
 import styles from './search.module.scss'
-import { fetchMovie } from 'utils/fetchMovie'
 
 const Search = () => {
   const [value, setValue] = useState('')
