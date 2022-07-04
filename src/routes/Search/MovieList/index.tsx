@@ -1,7 +1,7 @@
 import { useState, MouseEvent } from 'react'
 import { ProductProps } from '../../../types/ProductList'
 import useLocalStorageState from 'use-local-storage-state'
-import noPoster from '../../../assets/noImage.jpeg'
+import noPoster from '../../../assets/noPoster.jpeg'
 import Modal from 'components/Modal'
 
 import styles from './movieList.module.scss'
@@ -24,13 +24,13 @@ const MovieList = ({ data }: { data: ProductProps[] }) => {
 
   const handleAddFavorite = () => {
     setFavoriteMovie((prev) => [data[listId], ...prev])
-    setIsOpen((prev) => !prev)
+    toggleIsOpen()
   }
 
   const handleRemoveFavorite = () => {
     const movieFilter = favoriteMovie.filter((movie) => movie.imdbID !== data[listId].imdbID)
-    setFavoriteMovie(() => [...movieFilter])
-    setIsOpen((prev) => !prev)
+    setFavoriteMovie([...movieFilter])
+    toggleIsOpen()
   }
 
   if (!data) {
@@ -59,7 +59,7 @@ const MovieList = ({ data }: { data: ProductProps[] }) => {
           </div>
         </div>
       ))}
-      {isOpen ? (
+      {isOpen && (
         <Modal
           poster={data[listId].Poster}
           title={data[listId].Title}
@@ -68,9 +68,9 @@ const MovieList = ({ data }: { data: ProductProps[] }) => {
           handleAddFavorite={handleAddFavorite}
           handleRemoveFavorite={handleRemoveFavorite}
         />
-      ) : null}
+      )}
     </div>
   )
 }
 
-export { MovieList }
+export default MovieList
